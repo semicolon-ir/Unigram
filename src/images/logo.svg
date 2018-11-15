@@ -1,0 +1,32 @@
+<svg  width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 157">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ba4fc7;
+        stroke: #ba4fc7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 100px;
+        font-family: Baloo-Regular, Baloo;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_200" data-name="Group 200" transform="translate(-229 -276)">
+    <g id="Rectangle_90" data-name="Rectangle 90" class="cls-1" transform="translate(229 300)">
+      <rect class="cls-3" width="99" height="99" rx="20"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="98" height="98" rx="19.5"/>
+    </g>
+    <text id="U" class="cls-2" transform="translate(279 381)"><tspan x="-33.2" y="0">U</tspan></text>
+  </g>
+</svg>
