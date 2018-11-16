@@ -1,0 +1,32 @@
+body{
+  font-family: 'vazir', tahoma important;
+}
+
+.etext{
+  font-family: 'Baloo', cursive;
+  font-weight: 100;
+}
+
+.ptext{
+  font-family: 'vazir', tahoma ;
+  direction: rtl ;
+  text-align: right
+}
+
+.justify{
+  text-align: justify
+}
+
+.center{
+	text-align: center;
+}
+
+.is-revealing:before{
+	margin-right: 0;
+	margin-left: .5em;
+}
+.footer-links li{
+	padding: 0 .5em;
+}
+
+
