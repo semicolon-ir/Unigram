@@ -1,5 +1,5 @@
 body{
-  font-family: 'vazir', tahoma important;
+  font-family: 'Vazir', sans-serif important;
 }
 
 .etext{
@@ -8,7 +8,7 @@ body{
 }
 
 .ptext{
-  font-family: 'vazir', tahoma ;
+  font-family: 'Vazir', sans-serif;
   direction: rtl ;
   text-align: right
 }
