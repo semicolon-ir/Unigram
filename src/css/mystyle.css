@@ -1,6 +1,11 @@
 *{
   font-family: 'Vazir'
 }
+
+button{
+outline: none 
+}
+
 body{
   font-family: 'Vazir', sans-serif important;
 }
@@ -30,4 +35,38 @@ body{
 }
 .footer-links li{
 	padding: 0 .5em;
+}
+
+.email-subscribe{
+  font-size: 'Vazir';
+  width: 80%;
+  height: 48px;
+  padding: .5em;
+  margin-bottom: 1em;
+  text-align: center;
+  border: 1px solid #756af8;
+  border-radius: 2px;
+  outline: none;
+  transition: all .2s ease;
+}
+.email-subscribe::placeholder{
+  font-size: 'Vazir';
+  font-size: .8em;
+  color: lightgray;
+}
+
+.email-subscribe:focus{
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(33,43,55,0.12);
+}
+
+.subscribe-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  width: 40%;
+}
+.subscribe-wrapper *{
+  flex-grow: 0
 }

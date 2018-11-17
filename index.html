@@ -283,6 +283,16 @@
 				</div>
 			</div>
 		</section>
+		<section class="features-extended section has-top-divider" style="padding-top: 80px;margin-top:80px">
+			<h2 class="section-title mt-0 text-center ptext center">من رو خبر کن!</h2>
+			<p class="center">اگه علاقه مندی از اولین کسایی باشی که از سرویس ما استفاده می‌کنی ایمیل خودتو برای ما بنویس.</p>
+			<div class="subscribe-wrapper">
+				<form style="text-align:center;">
+					<input id="mail" class="email-subscribe" type="email" placeholder="ایمیل مثل mostafa@unigram.com" class="ptext"></input>
+					<button id="submitButton" class="button button-shadow ptext">منو به لیست اضافه کن</button>
+				</form>
+			</div>
+		</section>
 	</main>
 
 	<footer class="site-footer">
@@ -345,6 +355,43 @@
 	</footer>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  let config = {
+    apiKey: "AIzaSyCXO9DCMhvlSFehlWT3f4n6Xoa1wh20_2E",
+    authDomain: "um-landing-page.firebaseapp.com",
+    databaseURL: "https://um-landing-page.firebaseio.com",
+    projectId: "um-landing-page",
+    storageBucket: "um-landing-page.appspot.com",
+    messagingSenderId: "761929919628"
+  };
+  const firebaseApp = firebase.initializeApp(config);
+	function writeNewMail(mail) {
+	  // A post entry.
+	  var mailData = {
+	    mail: mail
+	  };
+
+	  // Get a key for a new Post.
+	  var newMailKey = firebase.database().ref().child('mails').push().key;
+
+	  // Write the new post's data simultaneously in the posts list and the user's post list.
+	  var updates = {};
+	  updates['/mails/' + newMailKey] = mailData;
+
+	  return firebase.database().ref().update(updates);
+	}
+
+	document.getElementById("submitButton").addEventListener("click", function(event){
+    event.preventDefault()
+		let mail = document.getElementById('mail').value;
+		writeNewMail(mail).then(function(){
+			alert("ایمیل شما با موفقیت ثبت شد")
+		})
+		
+	});
+</script>
 <script src="./src/js/main.min.js"></script>
 </body>
 </html>
