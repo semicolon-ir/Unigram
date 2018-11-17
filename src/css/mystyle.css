@@ -70,3 +70,14 @@ body{
 .subscribe-wrapper *{
   flex-grow: 0
 }
+
+.disabled::before,.disabled:hover::before {
+	box-shadow: none;
+}
+
+.disabled {
+	background: #ccc;
+	color: white !important;
+	pointer-events: none;
+}
+
